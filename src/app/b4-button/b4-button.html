@@ -1,10 +1,10 @@
 <template [ngIf]="href !==''">
-    <a [ngClass]="cssClassList" [href]="href">
+    <a [ngClass]="cssClassList" [href]="href" [type]="type">
         <ng-content></ng-content>
     </a>
 </template>
 <template [ngIf]="href ===''">
-    <button [ngClass]="cssClassList" [disabled]="disabled">
+    <button [ngClass]="cssClassList" [disabled]="disabled" [type]="type">
         <ng-content></ng-content>
     </button>
 </template>
