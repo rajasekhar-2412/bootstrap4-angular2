@@ -24,6 +24,11 @@ export class B4Button {
     style:'primary'| 'secondary' | 'success' | 'info' | 'warning' | 'danger' | 'link' = 'secondary';
     @Input()
     isSubmit:boolean = false;
+    @Input()
+    isDropdown:boolean = false;
+
+    // data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+
 
     type:'submit'| 'button' = 'button';
     cssClassList:String[] = ['btn'];
@@ -37,6 +42,11 @@ export class B4Button {
         if (this.disabled) {
             this.cssClassList.push('disabled');
         }
+
+        if (this.isDropdown) {
+            this.cssClassList.push('dropdown-toggle');
+        }
+
         if (this.outline) {
             cssStyleClass += '-outline'
         }

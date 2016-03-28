@@ -1,6 +1,10 @@
 // export * from './b4-alert/b4-alert';
 // export * from './b4-breadcrumb/b4-breadcrumb';
 export * from './b4-button/b4-button';
+export * from './b4-button-dropdown/b4-button-dropdown';
+export * from './b4-button-dropdown-content/b4-button-dropdown-content';
+export * from './b4-button-dropdown-item/b4-button-dropdown-item';
+export * from './b4-button-dropdown-title/b4-button-dropdown-title';
 // export * from './b4-button-group/b4-button-group';
 // export * from './b4-card/b4-card';
 // export * from './b4-carousel/b4-carousel';

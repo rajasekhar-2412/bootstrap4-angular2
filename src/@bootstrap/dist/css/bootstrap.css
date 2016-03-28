@@ -3670,11 +3670,11 @@ input[type="button"].btn-block {
 }
 
 /* line 118, ../../scss/_dropdown.scss */
-.open > .dropdown-menu {
+.open .dropdown-menu {
   display: block;
 }
 /* line 123, ../../scss/_dropdown.scss */
-.open > a {
+.open a {
   outline: 0;
 }
 

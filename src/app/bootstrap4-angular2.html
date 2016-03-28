@@ -1,6 +1,11 @@
 <b4-container>
     <b4-row>
         <b4-column [md]="12">
+            <h2>Buttons</h2>
+        </b4-column>
+    </b4-row>
+    <b4-row>
+        <b4-column [md]="12">
             <b4-button [style]="'primary'">Primary</b4-button>
             <b4-button [style]="'secondary'">Secondary</b4-button>
             <b4-button [style]="'success'">Success</b4-button>
@@ -53,6 +58,21 @@
         <b4-column [md]="12">
             <b4-button [style]="'primary'" [href]="'#'">Primary</b4-button>
             <b4-button [style]="'primary'" [isSubmit]="true">Primary</b4-button>
+        </b4-column>
+    </b4-row>
+    <b4-row>
+        <b4-column [md]="12">
+            <h2>Button Dropdowns</h2>
+            <b4-button-dropdown [style]="'primary'">
+                <b4-button-dropdown-title>Action</b4-button-dropdown-title>
+                <b4-button-dropdown-content>
+                    <b4-button-dropdown-item>Action</b4-button-dropdown-item>
+                    <b4-button-dropdown-item>Another action</b4-button-dropdown-item>
+                    <b4-button-dropdown-item>Something else here</b4-button-dropdown-item>
+                    <b4-button-dropdown-item [divider]="true"></b4-button-dropdown-item>
+                    <b4-button-dropdown-item>Separated link</b4-button-dropdown-item>
+                </b4-button-dropdown-content>
+            </b4-button-dropdown>
         </b4-column>
     </b4-row>
 </b4-container>
