@@ -22,7 +22,7 @@ export class B4Button {
     size:''| 'sm' |'lg' = '';
     @Input()
     type:'primary'| 'secondary' | 'success' | 'info' | 'warning' | 'danger' | 'link' = 'secondary';
-    @Input()
+
     cssClassList:String[] = ['btn'];
 
     constructor() {

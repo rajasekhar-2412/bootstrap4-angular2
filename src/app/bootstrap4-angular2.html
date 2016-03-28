@@ -1,39 +1,57 @@
-<section>
-    <b4-button [type]="'primary'">Primary</b4-button>
-    <b4-button [type]="'secondary'">Secondary</b4-button>
-    <b4-button [type]="'success'">Success</b4-button>
-    <b4-button [type]="'info'">Info</b4-button>
-    <b4-button [type]="'warning'">Warning</b4-button>
-    <b4-button [type]="'danger'">Danger</b4-button>
-    <b4-button [type]="'link'">Link</b4-button>
-</section>
-
-<section>
-    <b4-button [type]="'primary'" [size]="'lg'">Primary</b4-button>
-    <b4-button [type]="'primary'" [size]="'sm'">Primary</b4-button>
-</section>
-<section>
-    <b4-button [type]="'link'" [href]="'blah/blah'">Link</b4-button>
-</section>
-<section>
-    <b4-button [type]="'primary'" [outline]="true">Primary</b4-button>
-    <b4-button [type]="'secondary'" [outline]="true">Secondary</b4-button>
-    <b4-button [type]="'success'" [outline]="true">Success</b4-button>
-    <b4-button [type]="'info'" [outline]="true">Info</b4-button>
-    <b4-button [type]="'warning'" [outline]="true">Warning</b4-button>
-    <b4-button [type]="'danger'" [outline]="true">Danger</b4-button>
-</section>
-<section>
-    <b4-button [type]="'primary'" [block]="true">Primary</b4-button>
-    <b4-button [type]="'secondary'" [block]="true">Secondary</b4-button>
-</section>
-<section>
-    <b4-button [type]="'primary'" [disabled]="true">Primary</b4-button>
-    <b4-button [type]="'secondary'" [disabled]="true">Secondary</b4-button>
-</section>
-
-<section>
-    <b4-button [type]="'primary'" [href]="'#'" [disabled]="true">Primary</b4-button>
-    <b4-button [type]="'secondary'" [href]="'#'" [disabled]="true">Secondary</b4-button>
-</section>
-<router-outlet></router-outlet>
+<b4-container>
+    <b4-row>
+        <b4-column [md]="12">
+            <b4-button [type]="'primary'">Primary</b4-button>
+            <b4-button [type]="'secondary'">Secondary</b4-button>
+            <b4-button [type]="'success'">Success</b4-button>
+            <b4-button [type]="'info'">Info</b4-button>
+            <b4-button [type]="'warning'">Warning</b4-button>
+            <b4-button [type]="'danger'">Danger</b4-button>
+            <b4-button [type]="'link'">Link</b4-button>
+        </b4-column>
+    </b4-row>
+    <b4-row>
+        <b4-column [md]="12">
+            <b4-button [type]="'primary'" [size]="'lg'">Primary</b4-button>
+            <b4-button [type]="'primary'" [size]="'sm'">Primary</b4-button>
+        </b4-column>
+    </b4-row>
+    <b4-row>
+        <b4-column [md]="12">
+            <b4-button [type]="'link'" [href]="'blah/blah'">Link</b4-button>
+        </b4-column>
+    </b4-row>
+    <b4-row>
+        <b4-column [md]="12">
+            <b4-button [type]="'primary'" [outline]="true">Primary</b4-button>
+            <b4-button [type]="'secondary'" [outline]="true">Secondary</b4-button>
+            <b4-button [type]="'success'" [outline]="true">Success</b4-button>
+            <b4-button [type]="'info'" [outline]="true">Info</b4-button>
+            <b4-button [type]="'warning'" [outline]="true">Warning</b4-button>
+            <b4-button [type]="'danger'" [outline]="true">Danger</b4-button>
+        </b4-column>
+    </b4-row>
+    <b4-row>
+        <b4-column [md]="12">
+            <b4-button [type]="'primary'" [block]="true">Primary</b4-button>
+            <b4-button [type]="'secondary'" [block]="true">Secondary</b4-button>
+        </b4-column>
+    </b4-row>
+    <b4-row>
+        <b4-column [md]="12">
+            <b4-button [type]="'primary'" [disabled]="true">Primary</b4-button>
+            <b4-button [type]="'secondary'" [disabled]="true">Secondary</b4-button>
+        </b4-column>
+    </b4-row>
+    <b4-row>
+        <b4-column [md]="12">
+            <b4-button [type]="'primary'" [href]="'#'" [disabled]="true">Primary</b4-button>
+            <b4-button [type]="'secondary'" [href]="'#'" [disabled]="true">Secondary</b4-button>
+        </b4-column>
+    </b4-row>
+    <b4-row>
+        <b4-column [md]="12">
+            <router-outlet></router-outlet>
+        </b4-column>
+    </b4-row>
+</b4-container>

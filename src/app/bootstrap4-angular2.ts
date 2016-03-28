@@ -1,22 +1,20 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
-import {B4Button} from './b4-button/b4-button';
+import {B4Button, B4Column, B4Row, B4Container} from './b4-angular2';
 
 
 @Component({
-  selector: 'bootstrap4-angular2-app',
-  providers: [ROUTER_PROVIDERS],
-  templateUrl: 'app/bootstrap4-angular2.html',
-  directives: [ROUTER_DIRECTIVES, B4Button],
-  pipes: []
+    selector: 'bootstrap4-angular2-app',
+    providers: [ROUTER_PROVIDERS],
+    templateUrl: 'app/bootstrap4-angular2.html',
+    directives: [ROUTER_DIRECTIVES, B4Button, B4Column, B4Row, B4Container],
+    pipes: []
 })
-@RouteConfig([
-
-])
+@RouteConfig([])
 export class Bootstrap4Angular2App {
-  defaultMeaning: number = 42;
+    defaultMeaning:number = 42;
 
-  meaningOfLife(meaning?: number) {
-    return `The meaning of life is ${meaning || this.defaultMeaning}`;
-  }
+    meaningOfLife(meaning?:number) {
+        return `The meaning of life is ${meaning || this.defaultMeaning}`;
+    }
 }
