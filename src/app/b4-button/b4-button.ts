@@ -1,5 +1,5 @@
-import {Component, Input, SimpleChange} from 'angular2/core';
-const bbPrefix: string= 'btn-';
+import {Component, Input, HostListener} from 'angular2/core';
+const bbPrefix:string = 'btn-';
 
 @Component({
     selector: 'b4-button',
@@ -15,6 +15,8 @@ export class B4Button {
     @Input()
     disabled:boolean = false;
     @Input()
+    href:string = '';
+    @Input()
     outline:boolean = false;
     @Input()
     size:''| 'sm' |'lg' = '';
@@ -27,13 +29,31 @@ export class B4Button {
     }
 
     ngOnInit() {
-        this.cssClassList.push(bbPrefix+ this.type);
+        let cssStyleClass = bbPrefix + this.type;
+
+        if (this.disabled) {
+            this.cssClassList.push('disabled');
+        }
+        if (this.outline) {
+            cssStyleClass += '-outline'
+        }
+
+        if (this.block) {
+            this.cssClassList.push(bbPrefix + 'block');
+        }
+
+        this.cssClassList.push(cssStyleClass);
+
+        if (this.size !== '') {
+            this.cssClassList.push(bbPrefix + this.size);
+        }
     }
 
-    //
-    // ngOnChanges(changes:{[key:string]: SimpleChange}):any {
-    //     if (changes['type']) {
-    //         debugger
-    //     }
-    // }
+    @HostListener('click', ['$event'])
+    haltDisabledEvents(event: Event) {
+        if (this.disabled) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+        }
+    }
 }

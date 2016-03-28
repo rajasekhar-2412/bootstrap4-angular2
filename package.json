@@ -14,6 +14,7 @@
   "private": true,
   "dependencies": {
     "angular2": "2.0.0-beta.11",
+    "bootstrap": "^4.0.0-alpha.2",
     "es6-shim": "^0.35.0",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "angular-cli": "0.0.*",
     "angular-cli-github-pages": "^0.2.0",
+    "bootstrap": "4.0.0-alpha.2",
     "clang-format": "^1.0.35",
     "ember-cli-inject-live-reload": "^1.3.0",
     "jasmine-core": "^2.3.4",
