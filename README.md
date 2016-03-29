@@ -33,7 +33,3 @@ bootstrap4 components for angular2
 - [ ] Collapse
 - [ ] Carousel
 - [ ] Util
-
-## Layout
-- [ ] Container
-- [ ] Columns
